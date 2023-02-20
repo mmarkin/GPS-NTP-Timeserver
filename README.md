@@ -13,11 +13,10 @@ clients.
 ![Displays_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/FrontCloseUp.JPG)
 
 As on Cristiano's original version, the first OLED shows the UTC time and date, the number of GPS satellites that are
-"in view", and the resolution of the position fix. 
-The pushbutton switch enables or disables the server's WiFi.
-The yellow LED shows that WiFi is enabled. 
-The green LED shows that the GPS data is valid and the server's internal clock is synchronized with it.    
-The red LED flashes every second when GPS data is available. 
+"in view", and the resolution of the position fix.<br>
+The yellow LED shows that WiFi is enabled.<br> 
+The green LED shows that the GPS data is valid and the server's internal clock is synchronized with it.<br>    
+The red LED flashes every second when GPS data is available.
 
 OLED displays can wear out if they are active all the time especially if they show information that does not change much.
 This version includes provision to turn the OLEDs off if nobody is there to see them. As suggested by Brett Oliver, a
