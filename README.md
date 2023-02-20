@@ -98,7 +98,7 @@ Source code based on:
 
 Main layout diagram
 
-![sketch_bb-menor](https://user-images.githubusercontent.com/38574378/117375890-66f3f400-aea6-11eb-9389-1b9b0b01f88f.png)
+![sketch_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/MainBoard.png)
 
 A PIR sensor can be added to automatically turn the OLED displays on only when someone is near to see them.
 Thanks to Brett Oliver who engineered the mod on his version of this project.
