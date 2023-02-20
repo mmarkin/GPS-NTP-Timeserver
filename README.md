@@ -94,7 +94,9 @@ Source code is also based on:<br>
 - http://w8bh.net/avr/clock2.pdf
 - https://forum.arduino.cc/t/ntp-time-server/192816
 
-Main layout diagram
+---
+
+Main circuit diagram
 
 ![sketch_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/MainBoard.png)
 
