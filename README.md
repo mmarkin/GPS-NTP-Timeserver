@@ -120,7 +120,6 @@ Here are a couple of photos of the interior of the enclosure.
 
 ![intBack_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/InteriorBack.JPG)
 
-More information about this project can be found here:
-
+More information about this project can be found here:<br>
 https://www.linkedin.com/pulse/iot-maker-tale-stratum-1-time-server-built-from-scratch-monteiro/
 
