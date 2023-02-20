@@ -57,7 +57,7 @@ Parts list:
 - Neo-6m V2 GPS
 - 0.96" OLED Display (SSD1306 or similar. 
   If two are used be sure that it is possible to change the I2C address on one of them.) 
-- Hi-Link 5V/3W
+- Hi-Link 5V/3W Power supply
 - Mini-360 DC-DC Buck converter
 - Red, Green and Yellow LEDs
 - Resistors (150, 100 and 150 Ohms respectivelly for above leds)
