@@ -63,6 +63,7 @@ Parts list:
 - Red, Green and Yellow LEDs
 - Resistors (150, 100 and 150 Ohms respectivelly for above leds)
 - Momentary push button
+- HC-SR501 PIR motion sensor module or SPDT switch (both are optional)
 
 ---
 <p align="center"><img src="https://user-images.githubusercontent.com/38574378/132773469-08fb7b59-2f9d-4641-9665-c8d50d3904bc.png">  
