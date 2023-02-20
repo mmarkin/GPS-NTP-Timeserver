@@ -46,7 +46,8 @@ directory. The platformio.ini file is also provided.
  
 A custom enclosure for the project was built using walnut and acrylic.  
 
-3/4 Enclosure photo
+[3/4 Enclosure photo
+](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/Enclosure.JPG)
 
 Parts list:
 
