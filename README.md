@@ -118,6 +118,8 @@ Here are a couple of photos of the interior of the enclosure.
 
 ![intFront_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/InteriorFront.JPG)
 
+The pushbutton enables or disables the WiFi. I did not use a PIR. The toggle switch turns the displays on and off.
+
 ![intBack_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/InteriorBack.JPG)
 
 More information about this project can be found here:<br>
