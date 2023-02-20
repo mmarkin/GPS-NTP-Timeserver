@@ -15,7 +15,7 @@ clients.
 As on Cristiano's original version, the first OLED shows the UTC time and date, the number of GPS satellites that are
 "in view", and the resolution of the position fix.<br>
 The yellow LED shows that WiFi is enabled.<br> 
-The green LED shows that the GPS data is valid and the server's internal clock is synchronized with it.<br>    
+The green LED shows that the GPS data is valid and the server's internal clock is synchronized with it.    
 The red LED flashes every second when GPS data is available.
 
 OLED displays can wear out if they are active all the time especially if they show information that does not change much.
