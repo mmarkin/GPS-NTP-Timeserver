@@ -106,12 +106,13 @@ Alternately, a simple SPDT switch that connects A0 to either ground or +3.3 volt
 If it is not desired to turn the displays off, just connect A0 permanently to +3.3 volts or comment out the 
 "setPowerSave(1)" statements in the main.cpp file. 
 
-PIR diagram
-
+![pir_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/PIR.jpg)
 This version of the project does not have to be portable so it is AC powered only. 
-The the battery parts of the original the power supply are not shown.
 
 Power supply diagram
 
 ![power supply_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/PowerSupply.png)
+
+More information about this project can be found here:
+https://www.linkedin.com/pulse/iot-maker-tale-stratum-1-time-server-built-from-scratch-monteiro/
 
