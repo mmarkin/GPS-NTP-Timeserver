@@ -16,8 +16,7 @@ void setup()
   Serial.begin(9600);
   delay(2000);
   Serial.println("\nGPS Time Server");
-  Serial.println("Iniciado");  // Portugese for "Initiated" -MM
-
+ 
   pinMode(LOCK_LED, OUTPUT);
   pinMode(PPS_LED, OUTPUT);
   pinMode(WIFI_LED, OUTPUT);
@@ -345,7 +344,10 @@ void ShowSatellites()
   u8g2_1.print(resol);
 }
 
-void ShowPosition()
+// We just care about the time here not the position. But it's GPS so the server  
+// knows where it's located and the function is here if you want to use it.
+
+void ShowPosition()     
 {  
   if (latitude < 0.0) 
   {
@@ -478,9 +480,8 @@ void SyncWithGPS()
   unsigned long age;
   gps.crack_datetime(&y, &mon, &d, &h, &m, &s, NULL, &age); // get time from GPS
   gps.f_get_position(&latitude, &longitude);
-
-  //if (age < 1000 or age > 3000)        // dont use data older than 1 second
-  if (age < 1000)
+         
+  if (age < 1000)                      // dont use data older than 1 second
   {
     setTime(h, m, s, d, mon, y);       // copy GPS time to system time
     DEBUG_PRINT("Time from GPS: ");
@@ -637,7 +638,7 @@ void ProcessNTP()
     const uint32_t seventyYears = 2208988800UL;    // to convert Unix time to NTP 
     time_t t = now();
     lastFix = t;    
-    //timestamp = CalculateNTP(year(t), month(t), day(t), hour(t), minute(t), second(t));
+    
     timestamp = t + seventyYears;    
 
     #ifdef DEBUG
