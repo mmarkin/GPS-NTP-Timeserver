@@ -2,6 +2,7 @@
 WiFi enabled GPS fed NTP server based on ESP8266 and Arduino framework 
 
 This project is based on the work of Cristiano Monteiro. His version is portable.
+https://github.com/Montecri/GPSTimeServer
 
 Mine adds a second OLED display to show information about what is connected to the server. The second display is optional, 
 the code posted here runs without it. However the additional display helps to verify that the server responds to the NTP requests. 
@@ -59,11 +60,9 @@ Parts list:
   If two are used be sure that it is possible to change the I2C address on one of them.) 
 - Hi-Link 5V/3W
 - Mini-360 DC-DC Buck converter
-- TP4056 Module (optional - for AC/DC power supply)
-- 18650 battery holder (optional - for AC/DC power supply)
 - Red, Green and Yellow LEDs
 - Resistors (150, 100 and 150 Ohms respectivelly for above leds)
-- Switch key and momentary push button
+- Momentary push button
 
 ---
 <p align="center"><img src="https://user-images.githubusercontent.com/38574378/132773469-08fb7b59-2f9d-4641-9665-c8d50d3904bc.png">  
@@ -117,6 +116,7 @@ Power supply diagram
 Here are a couple of photos of the interior of the enclosure.
 
 ![intFront_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/InteriorFront.JPG)
+
 ![intBack_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/InteriorBack.JPG)
 
 More information about this project can be found here:
