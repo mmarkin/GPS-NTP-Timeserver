@@ -2,6 +2,7 @@
 WiFi enabled GPS fed NTP server based on ESP8266 and Arduino framework 
 
 This project is based on the work of Cristiano Monteiro. His version is portable.
+
 https://github.com/Montecri/GPSTimeServer
 
 Mine adds a second OLED display to show information about what is connected to the server. The second display is optional, 
@@ -121,5 +122,6 @@ Here are a couple of photos of the interior of the enclosure.
 ![intBack_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/InteriorBack.JPG)
 
 More information about this project can be found here:
+
 https://www.linkedin.com/pulse/iot-maker-tale-stratum-1-time-server-built-from-scratch-monteiro/
 
