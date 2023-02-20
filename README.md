@@ -9,7 +9,7 @@ Every time an NTP request comes in from a client, ie. a clock connected to the s
 the time the response was sent is shown on the OLED. In server mode, ESP8266 microcontrollers can handle up to eight WiFi 
 clients.
 
-Display photo
+![Displays_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/FrontCloseUp.JPG)
 
 As on Cristiano's original version, the first OLED shows the UTC time and date, the number of GPS satellites that are
 "in view", and the resolution of the position fix. 
