@@ -21,7 +21,7 @@ The red LED flashes every second when GPS data is available.
 OLED displays can wear out if they are active all the time especially if they show information that does not change much.
 This version includes provision to turn the OLEDs off if nobody is there to see them. As suggested by Brett Oliver, a
 PIR motion sensor module can be connected to the ESP8266 to automatically turn on the OLEDs when someone
-is near and turn them off when they leave. Or a switch could be connected instead if manual operation is desired.
+is near and turn them off when they leave. A switch could be connected instead of the sensor if manual operation is desired.
 See below for more details.
 
 The I2C address of the second OLED module has to be changed. This is done by relocating a resistor on the module's circuit
