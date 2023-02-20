@@ -281,7 +281,7 @@ void InitOLED()
 {
   u8g2_1.setI2CAddress(DISPLAY_1_ADDR);
   u8g2_1.begin();
-  u8g2_1.setContrast(2);    // you can play with this to try to equalize brightness of both displays
+  u8g2_1.setContrast(255);      // you can play with this to try to equalize brightness of both displays
                                 // but it doesn't have much effect -MM
            
   u8g2_2.setI2CAddress(DISPLAY_2_ADDR);
