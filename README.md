@@ -96,7 +96,7 @@ Source code is also based on:<br>
 
 ---
 
-Main circuit diagram
+Main circuit wiring
 
 ![sketch_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/MainBoard.png)
 
@@ -110,9 +110,9 @@ If it is not desired to turn the displays off, just connect A0 permanently to +3
 
 This project does not have to be portable as Cristiano's is so it is AC powered only. 
 
-Power supply diagram
+Power supply wiring
 
-![power supply_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/PowerSupply.png)
+![powerSupply_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/PowerSupply.png)
 
 Here are a couple of photos of the interior of the enclosure.
 
