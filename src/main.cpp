@@ -5,11 +5,7 @@
    https://forum.arduino.cc/u/ziggy2012/summary
 
    Mitch Markin, 02.Sep.2022:
-   date bug from ziggy2012 code fixed,
-   unused variables commented out to clear compiler warnings, 
-   Brett Oliver's PIR code addded to turn OLED display on and off,
-   got rid of string class in display functions,
-   ICACHE_RAM_ATTR changed to IRAM_ADDR to clear compiler warnings,
+   Brett Oliver's PIR code addded to turn OLED display on and off   
    added second OLED display for client IP information
 */
 
@@ -437,42 +433,6 @@ void UpdateDisplay()
 
     uint16_t PIRValue = analogRead(A0);
 
-    if (PIRValue < 340)         
-    {
-      u8g2_1.setPowerSave(1);   // turn displays off
-      u8g2_2.setPowerSave(1);     
-    } 
-    else if (PIRValue < 680)    
-    {
-      u8g2_1.setPowerSave(0);   // turn displays on, show position
-      u8g2_2.setPowerSave(0);
-
-      u8g2_1.clearBuffer();    
-      ShowSatellites();
-      ShowPosition();                 
-      u8g2_1.sendBuffer();      
-
-      u8g2_2.clearBuffer();       
-      ShowClient();
-      u8g2_2.sendBuffer();    
-    }
-    else
-    {
-      u8g2_1.setPowerSave(0);   // turn displays on, show time and date
-      u8g2_2.setPowerSave(0);
-
-      u8g2_1.clearBuffer();    
-      ShowSatellites();
-      ShowDate(t);
-      ShowTime(t);           
-      u8g2_1.sendBuffer();     
-
-      u8g2_2.clearBuffer();     
-      ShowClient();
-      u8g2_2.sendBuffer();   
-    }
-
-    /*
     if (PIRValue < 500)         
     {
       u8g2_1.setPowerSave(1);   // turn displays off
@@ -493,8 +453,7 @@ void UpdateDisplay()
     u8g2_2.clearBuffer();     
     ShowClient();
     u8g2_2.sendBuffer();   
-    */
-   
+       
     DEBUG_PRINTLN("Called PrintTime from UpdateDisplay");   
 
     #ifdef DEBUG
@@ -601,58 +560,6 @@ void ProcessKeypress()
   ProcessWifi();
   DEBUG_PRINTLN(F("BUTTON CLICK PROCESSED!"));
 }
-
-// --------------------------------------------------------------------------------------------------
-// NTP since 1900/01/01
-
-//const uint8_t daysInMonth[] PROGMEM = 
-//  { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };     // const or compiler complains, the array also has to be global
-
-//const uint32_t seventyYears = 2208988800UL;    // to convert Unix time to NTP 
-/*
-// Mitch's function
-
-uint32_t CalculateNTP(uint16_t y, uint8_t m, uint8_t d, uint8_t h, uint8_t mm, uint8_t s)
-{
-  uint16_t yearsSince1970 = y;                 // calculate the number of years from 1970 to the current year 
-  if (y >= 1970) 
-    yearsSince1970 = y - 1970;  
-
-  uint16_t days = d - 1;                       // start with the number of elapsed days in the current month 
-                                               // don't count the current day, its hours, minutes and seconds will be added later
-  for (uint8_t i = 1; i < m; i++)              // add the days between January 1 and the start of the current month
-    days += pgm_read_byte(daysInMonth + i - 1);
-
-  if ((y % 4 == 0) && m > 2)                   // add a day if the current year is a leap year and the current month is > Feb. 
-    days++;
-
-  days += 365 * yearsSince1970;                // add the days before the current year  
-  days += (yearsSince1970 + 1) / 4;            // add an extra day for each leap year before the current year
-
-  uint32_t secs = days * 24L * 3600L;          // calculate the number of seconds in the total days 
-  secs += (h * 3600L) + (mm * 60L) + s;        // now add the current day's hours, minutes, and seconds 
-                                               // (this is a UNIX Epoch timestamp)
-
-  secs += seventyYears;                        // add the number of seconds before 1970
-  return secs;                                 // return the NTP Epoch timestamp 
-} 
-
-// ziggy's function with date bug fixed
-
-uint32_t numberOfSecondsSince1900Epoch(uint16_t y, uint8_t m, uint8_t d, uint8_t h, uint8_t mm, uint8_t s)
-{  
-  if (y >= 1970) y -= 1970;
-
-  uint16_t days = d - 1;
-
-  for (uint8_t i = 1; i < m; ++i) days += pgm_read_byte(daysInMonth + i - 1);
-
-  if (m > 2 && y % 4 == 0) ++days;
-
-  days += 365 * y + (y + 3) / 4 - 1;
-  return days * 24L * 3600L + h * 3600L + mm * 60L + s + seventyYears;
-}
-*/
 
 // --------------------------------------------------------------------------------------------------
 
