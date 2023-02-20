@@ -4,11 +4,11 @@ WiFi enabled GPS fed NTP server based on ESP8266 and Arduino framework
 This project is based on the work of Cristiano Monteiro. His version is portable.<br>
 https://github.com/Montecri/GPSTimeServer
 
-My version adds a second OLED display to show information about what is connected to the server. The second display is optional, 
-the code posted here runs without it. However the additional display helps to verify that the server responds to the NTP requests. 
+My version adds a second OLED display to help verify that the server responds to the NTP requests.  
 Every time an NTP request comes in from a client, ie. a clock connected to the server's WiFi network, its IP address and 
-the time the response was sent is shown on the OLED. In server mode, ESP8266 microcontrollers can handle up to eight WiFi 
-clients.
+the time the response was sent is shown on the OLED. The second display is optional, the code posted here runs without it. 
+However with multiple clocks it is a handy way to make sure they are all connected and being served. 
+In server mode, ESP8266 microcontrollers can handle up to eight WiFi clients.
 
 ![Displays_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/Display.JPG)
 
