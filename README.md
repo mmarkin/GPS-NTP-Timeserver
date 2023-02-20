@@ -5,7 +5,7 @@ This project is based on the work of Cristiano Monteiro. His version is portable
 https://github.com/Montecri/GPSTimeServer
 
 My version adds a second OLED display to help verify that the server responds to the NTP requests. Every time an NTP request comes 
-in from a client, ie. a clock connected to the server's WiFi network, its IP address and the time the response was sent is shown 
+in from a client, ie. a clock connected to the server's WiFi network, its IP address and the time the response was sent are shown 
 on the OLED. The second display is optional, the code posted here runs without it. However with multiple clocks it is a handy 
 way to make sure they are all connected and being served. In server mode, ESP8266 microcontrollers can handle up to eight WiFi clients.
 
@@ -19,8 +19,8 @@ The red LED flashes every second when GPS data is available.
 
 OLED displays can wear out if they are active all the time especially if they show information that does not change much.
 This version includes provision to turn the OLEDs off if nobody is there to see them. As suggested by Brett Oliver, a
-PIR motion sensor module can be connected to the ESP8266 to automatically turn on the OLEDs when someone
-is near and turn them off when they leave. A switch could be connected instead of the sensor if manual operation is desired.
+PIR motion sensor module can be connected to the ESP8266 to automatically turn on the OLEDs when someone is near and turn 
+them off when they leave. A switch could be connected instead of the sensor if manual operation is desired.
 See below for more details.
 
 The I2C address of the second OLED module has to be changed. This is done by relocating a resistor on the module's circuit
