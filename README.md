@@ -26,8 +26,8 @@ See below for more details.
 
 The I2C address of the second OLED module has to be changed. This is done by relocating a resistor on the module's circuit
 board. There is a graphic on the board to show which resistor and where it goes for each of the two addresses. For ecample
-with SSD1306 modules the address is changed from 0x78 to 0x7A. The resistor is a tiny surface mount part so it requires
-a bit of delicate soldering to make the change.
+with the recommended SSD1306 modules the address is changed from 0x78 to 0x7A. The resistor is a tiny surface mount part so 
+it requires a bit of delicate soldering to make the change.
 
 The U8g2 library the code uses works with many different OLED displays. 
 You just need to use the constructor from the library and the I2C addresses that match the displays being used.
