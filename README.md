@@ -93,6 +93,7 @@ Libraries:
 Source code is also based on:<br>
 - http://w8bh.net/avr/clock2.pdf
 - https://forum.arduino.cc/t/ntp-time-server/192816
+- http://www.brettoliver.org.uk/GPS_Time_Server/GPS_Time_Server.htm
 
 ---
 
