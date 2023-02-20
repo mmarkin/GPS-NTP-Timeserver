@@ -4,11 +4,10 @@ WiFi enabled GPS fed NTP server based on ESP8266 and Arduino framework
 This project is based on the work of Cristiano Monteiro. His version is portable.<br>
 https://github.com/Montecri/GPSTimeServer
 
-My version adds a second OLED display to help verify that the server responds to the NTP requests.  
-Every time an NTP request comes in from a client, ie. a clock connected to the server's WiFi network, its IP address and 
-the time the response was sent is shown on the OLED. The second display is optional, the code posted here runs without it. 
-However with multiple clocks it is a handy way to make sure they are all connected and being served. 
-In server mode, ESP8266 microcontrollers can handle up to eight WiFi clients.
+My version adds a second OLED display to help verify that the server responds to the NTP requests. Every time an NTP request comes 
+in from a client, ie. a clock connected to the server's WiFi network, its IP address and the time the response was sent is shown 
+on the OLED. The second display is optional, the code posted here runs without it. However with multiple clocks it is a handy 
+way to make sure they are all connected and being served. In server mode, ESP8266 microcontrollers can handle up to eight WiFi clients.
 
 ![Displays_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/Display.JPG)
 
@@ -102,10 +101,9 @@ Main circuit wiring
 ![sketch_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/MainBoard.png)
 
 A PIR motion sensor can be added to automatically turn the OLED displays on only when someone is near to see them.
-Thanks to Brett Oliver who engineered the mod on his version of this project.
-Alternately, a simple SPDT switch that connects A0 to either ground or +3.3 volts could be used. 
-If it is not desired to turn the displays off, just connect A0 permanently to +3.3 volts or comment out the 
-"if (PIRvalue < 500)" block of statements in the main.cpp file. 
+Thanks to Brett Oliver who engineered the mod on his version of this project. Alternately, a simple SPDT switch 
+that connects A0 to either ground or +3.3 volts could be used. If it is not desired to turn the displays off, 
+just connect A0 permanently to +3.3 volts or comment out the "if (PIRvalue < 500)" block of statements in the main.cpp file. 
 
 ![pir_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/PIR.jpg)
 
