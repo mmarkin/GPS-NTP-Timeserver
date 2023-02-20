@@ -34,7 +34,7 @@ You just need to use the constructor from the library and the I2C addresses that
 If you plan to use two displays, just be sure that is is possible to change the I2C address on one of them.
 For example SH1106 modules could also be used. Constructors for SH1106 modules are included in the definitions.h file. 
 To use them comment out the SSD1306 constructors and uncomment the SH1106 constructors. 
-The I2C addresses specified in the code may also need to be changed to 0x3C and Ox3D. 
+The I2C addresses specified in the code may also need to be changed to 0x3C and 0x3D. 
 
 To use the server, set the clock so it joins the WiFi network specified by the SSID and password in the "definitions.h" 
 file. Also set the clock so the address for the time server it calls is 192.168.4.1. That is the default IP address ESP 
