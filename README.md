@@ -41,7 +41,7 @@ file. Also set the clock so the address for the time server it calls is 192.168.
 devices use in server mode.
 
 It is highly recommended to use PlatformIO to compile and edit the code. That way all the libraries needed will be 
-downloaded and installed automatically. It's free like the Arduino IDE. However PlatformIO has more professional features 
+downloaded and installed automatically. It is free like the Arduino IDE. However PlatformIO has more professional features 
 that make it easier to develop a project like this once you get the hang of using it. All the files needed for this project 
 have been provided. The code is in two files: definitions.h is in the "includes" directory and main.cpp is in the "src" 
 directory. The platformio.ini file is also provided. 
@@ -122,6 +122,6 @@ The pushbutton enables or disables the WiFi. I did not use a PIR. The toggle swi
 
 ![intBack_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/InteriorBack.JPG)
 
-More information about this project can be found here:<br>
+More information about Cristiano's original versopm of this timeserver can be found here:<br>
 https://www.linkedin.com/pulse/iot-maker-tale-stratum-1-time-server-built-from-scratch-monteiro/
 
