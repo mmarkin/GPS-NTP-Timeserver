@@ -435,6 +435,16 @@ void UpdateDisplay()
 
     uint16_t PIRValue = analogRead(A0);
 
+    u8g2_1.clearBuffer();     
+    ShowSatellites();
+    ShowDate(t);
+    ShowTime(t);           
+    u8g2_1.sendBuffer();     
+
+    u8g2_2.clearBuffer();     
+    ShowClient();
+    u8g2_2.sendBuffer();
+     
     if (PIRValue < 500)         
     {
       u8g2_1.setPowerSave(1);   // turn displays off
@@ -444,17 +454,7 @@ void UpdateDisplay()
     {
       u8g2_1.setPowerSave(0);   // turn displays on
       u8g2_2.setPowerSave(0);
-    }  
-
-    u8g2_1.clearBuffer();     
-    ShowSatellites();
-    ShowDate(t);
-    ShowTime(t);           
-    u8g2_1.sendBuffer();     
-
-    u8g2_2.clearBuffer();     
-    ShowClient();
-    u8g2_2.sendBuffer();   
+    }   
        
     DEBUG_PRINTLN("Called PrintTime from UpdateDisplay");   
 
