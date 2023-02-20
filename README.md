@@ -113,5 +113,5 @@ The the battery parts of the original the power supply are not shown.
 
 Power supply diagram
 
-![power supply_bb-menor](https://user-images.githubusercontent.com/38574378/117375897-6a877b00-aea6-11eb-8022-d2b06e11bd37.png)
+![power supply_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/PowerSupply.pdn)
 
