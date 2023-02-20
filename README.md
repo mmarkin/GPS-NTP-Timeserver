@@ -122,8 +122,6 @@ The pushbutton enables or disables the WiFi. I did not use a PIR. The toggle swi
 
 ![intBack_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/InteriorBack.JPG)
 
-![IMG_3050_MOV_AdobeExpress (1)](https://user-images.githubusercontent.com/32185145/220187393-383a53ef-830b-45f4-8442-39d8514b5405.gif)
-
 More information about Cristiano's original versopm of this timeserver can be found here:<br>
 https://www.linkedin.com/pulse/iot-maker-tale-stratum-1-time-server-built-from-scratch-monteiro/
 
