@@ -37,7 +37,7 @@ The I2C addresses specified in the code may also need to be changed to 0x3C and 
 
 To use the server, set the clock so it joins the WiFi network specified by the SSID and password in the definitions.h 
 file. Also set the clock so the address for the time server it calls is 192.168.4.1. That is the default IP address ESP 
-devices use in server mode.
+devices use in server mode. The server will assign IP addresses to clients on its network starting with 192.168.4.2.
 
 It is highly recommended to use PlatformIO to compile and edit the code. That way all the libraries needed will be 
 downloaded and installed automatically. It is free like the Arduino IDE. However PlatformIO has more professional features 
