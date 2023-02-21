@@ -24,7 +24,7 @@ them off when they leave. A switch could be connected instead of the sensor if m
 See below for more details.
 
 The I2C address of the second OLED module has to be changed. This is done by relocating a resistor on the module's circuit
-board. There is a graphic on the board to show which resistor and where it goes for each of the two addresses. For ecample
+board. There is a graphic on the board to show which resistor and where it goes for each of the two addresses. For example
 with the recommended SSD1306 modules the address is changed from 0x78 to 0x7A. The resistor is a tiny surface mount part so 
 it requires a bit of delicate soldering to make the change.
 
