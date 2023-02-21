@@ -1,7 +1,7 @@
 # GPS-NTP-Timeserver
 WiFi enabled GPS fed NTP server based on ESP8266 and Arduino framework 
 
-This project is based on the work of Cristiano Monteiro. His version is portable.<br>
+This project adds to the work of Cristiano Monteiro. His version is portable.<br>
 https://github.com/Montecri/GPSTimeServer
 
 My version adds a second OLED display to help verify that the server responds to the NTP requests. Every time an NTP request comes 
