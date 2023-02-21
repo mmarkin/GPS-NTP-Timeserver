@@ -5,7 +5,7 @@ This project is based on the work of Cristiano Monteiro. His version is portable
 https://github.com/Montecri/GPSTimeServer
 
 My version adds a second OLED display to help verify that the server responds to the NTP requests. Every time an NTP request comes 
-in from a client, ie. a clock connected to the server's WiFi network, its IP address and the time the response was sent are shown 
+in from a client (i.e., a clock connected to the server's WiFi network) its IP address and the time the response was sent are shown 
 on the OLED. The second display is optional, the code posted here runs without it. However with multiple clocks it is a handy 
 way to make sure they are all connected and being served. In server mode, ESP8266 microcontrollers can handle up to eight WiFi clients.
 
