@@ -96,7 +96,11 @@ Source code is also based on:<br>
 
 ---
 
-Wiring diagram
+Schematic diagram
+
+![sketch_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/Schematic.png)
+
+Breadboard layout
 
 My time server does not have to be portable as Cristiano's is so it is AC powered only. 
 
