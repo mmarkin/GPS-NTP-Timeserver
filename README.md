@@ -98,18 +98,20 @@ Source code is also based on:<br>
 
 Schematic diagram
 
-![sketch_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/Schematic.png)
-
-Breadboard layout
-
-My time server does not have to be portable as Cristiano's is so it is AC powered only. 
-
-![sketch_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/sketch_bb.png)
+My time server does not have to be portable as Cristiano's is so it is AC powered only.
 
 A PIR motion sensor can be connected to A0 on the NodeMCU to automatically turn the OLED displays on only when someone
 is near to see them. Thanks to Brett Oliver who engineered the mod on his version of Cristiano's project. Alternatively, a simple 
 SPDT switch that connects A0 to either ground or +3.3 volts could be used. If it is not desired to turn the displays off, 
 just connect A0 permanently to +3.3 volts or comment out the "if (PIRvalue < 500)" block of statements in the main.cpp file. 
+
+![sketch_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/Schematic.png)
+
+Breadboard layout
+
+![sketch_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/sketch_bb.png)
+
+
 
 Here are a couple of photos of the interior of the enclosure.
 
