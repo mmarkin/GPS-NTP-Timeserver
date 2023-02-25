@@ -44,7 +44,9 @@ that make it easier to develop a project like this once you get the hang of usin
 have been provided. The code is in two files: definitions.h is in the "includes" directory and main.cpp is in the "src" 
 directory. The platformio.ini file is also provided. 
  
-I built a custom enclosure for the project using walnut and acrylic.  
+I built a custom enclosure for the project using walnut and acrylic. 
+
+![EnclosureFront_bb-menor]https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/EnclosureFront.JPG
 
 ![Enclosure_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/Enclosure.JPG)
 
