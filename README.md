@@ -62,7 +62,7 @@ Parts list:
 - Mini-360 DC-DC Buck converter
 - Red, Green and Yellow LEDs
 - Resistors (150, 100 and 150 Ohms respectivelly for above leds)
-- Momentary push button
+- Momentary push button switch
 - HC-SR501 PIR motion sensor module or SPDT switch (both are optional)
 
 ---
