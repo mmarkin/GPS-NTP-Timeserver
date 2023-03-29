@@ -17,17 +17,17 @@ of the position fix, and the UTC time and date. The yellow LED shows that WiFi i
 valid and the server's internal clock is synchronized with it. The red LED flashes every second when GPS data is available.
 
 OLED displays can wear out if they are active all the time especially if they show information that does not change much.
-This version includes provision to turn the OLEDs off if nobody is there to see them. As suggested by Brett Oliver, a
-PIR motion sensor module can be connected to the ESP8266 to automatically turn on the OLEDs when someone is near and turn 
-them off when they leave. A switch could be connected instead of the sensor if manual operation is desired.
-See below for more details.
+This version includes provision to turn the OLEDs off if nobody is there to see them. As suggested by Brett Oliver, who 
+engineered the mod on the version of Cristiano's project that he built, a PIR motion sensor module can be connected 
+to the ESP8266 to automatically turn on the OLEDs when someone is near and turn them off when they leave. A switch could be 
+connected instead of the sensor if manual operation is desired. See below for more details.
 
 The I2C address of the second OLED module has to be changed. This is done by relocating a resistor on the module's circuit
-board. There is a graphic on the board to show which resistor and where it goes for each of the two addresses. For example
-with the recommended SSD1306 modules the address is changed from 0x78 to 0x7A. The resistor is a tiny surface mount part so 
-it requires a bit of delicate soldering to make the change.
+board. There is a graphic on the board to show which resistor it is and where it goes for each of the two addresses. For example
+with the recommended SSD1306 modules the address is changed from 0x78 to 0x7A. The resistor is a tiny surface-mount part so 
+if you do not have surface-mount rework equipemnt it requires a bit of delicate soldering to make the change.
 
-The U8g2 library the code uses works with many different OLED displays. 
+The U8g2 library that the code uses to drive the OLED displays works with many different displays. 
 You just need to use the constructor from the library and the I2C addresses that match the displays being used.
 For example SH1106 modules could also be used. Constructors for SH1106 modules are included in the definitions.h file. 
 To use them comment out the SSD1306 constructors and uncomment the SH1106 constructors. 
@@ -100,10 +100,10 @@ Wiring
 
 My time server does not have to be portable as Cristiano's is so it is AC powered only.
 
-A PIR motion sensor can be connected to A0 on the NodeMCU to automatically turn the OLED displays on only when someone
-is near to see them. Thanks to Brett Oliver who engineered the mod on his version of Cristiano's project. Alternatively, a simple 
-SPDT switch that connects A0 to either ground or +3.3 volts could be used. If it is not desired to turn the displays off, 
-just connect A0 permanently to +3.3 volts or comment out the "if (PIRvalue < 500)" block of statements in the main.cpp file.
+If a PIR motion sensor is used to automatically turn the OLED displays on only when someone is near enough to see them, it is 
+connected to A0 on the NodeMCU. Alternatively, a simple SPDT switch that connects A0 to either ground or +3.3 volts could be
+used. If it is not desired to turn the displays off, just connect A0 permanently to +3.3 volts or comment out the 
+"if (PIRvalue < 500)" block of statements in the main.cpp file.
 
 Schematic diagram
 
