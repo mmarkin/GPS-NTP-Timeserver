@@ -123,6 +123,16 @@ The pushbutton enables or disables the WiFi. I did not use a PIR. The toggle swi
 
 ![intBack_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/InteriorBack.JPG)
 
+Update:
+
+I designed a printed circuit board for the project and had a few made. 
+
+![newBoard_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/New%20Board%20(5).JPG)
+
+![server2_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/Server%202.JPG)
+
+
+
 CAD drawing for the enclosure
 
 ![intFront_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/Enclosure.png)
