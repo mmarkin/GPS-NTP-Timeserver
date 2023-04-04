@@ -4,9 +4,12 @@
    and
    https://forum.arduino.cc/u/ziggy2012/summary
 
-   Mitch Markin, 02.Sep.2022:
+   Mitch Markin: 
+   02.Sep.2022:
    Brett Oliver's PIR code addded to turn OLED display on and off   
    added second OLED display for client IP information
+   03.Apr.2023:
+   bug fixes for packet buffer settigs sugested by sjthespian   
 */
 
 #include "definitions.h"
@@ -619,20 +622,21 @@ void ProcessNTP()
       Serial.println();
     #endif
 
-    packetBuffer[0] = 0b00100100; // 00 (no leapsecond indicated), 100 (version 4), 100 (server mode)
-    packetBuffer[1] = 4;          // stratum (MM - the original authors think it should be 4 or so, not 1)
-    packetBuffer[2] = 6;          // polling minimum
-    packetBuffer[3] = 0xFA;       // precision
+    packetBuffer[0] = 0b00100100;         // 00 (no leapsecond indicated), 100 (version 4), 100 (server mode)
+    if (gpsLocked) packetBuffer[1] = 1;   // stratum 1 if synced with GPS
+    else  packetBuffer[1] = 16;           // stratum 16 if not synced
+    packetBuffer[2] = 6;                  // polling minimum
+    packetBuffer[3] = 0xFA;               // precision
 
-    packetBuffer[7] = 0;          // root delay
-    packetBuffer[8] = 0;
-    packetBuffer[9] = 8;
-    packetBuffer[10] = 0;
+    packetBuffer[4] = 0;                  // root delay
+    packetBuffer[5] = 0;
+    packetBuffer[6] = 8;
+    packetBuffer[7] = 0;
 
-    packetBuffer[11] = 0;         // root dispersion
-    packetBuffer[12] = 0;
-    packetBuffer[13] = 0xC;
-    packetBuffer[14] = 0;
+    packetBuffer[8] = 0;                  // root dispersion
+    packetBuffer[9] = 0;
+    packetBuffer[10] = 0xC;
+    packetBuffer[11] = 0;
 
     uint32_t timestamp, tempval;
     const uint32_t seventyYears = 2208988800UL;    // to convert Unix time to NTP 
@@ -651,10 +655,23 @@ void ProcessNTP()
 
     tempval = timestamp;
 
-    packetBuffer[12] = 71; // "G";
-    packetBuffer[13] = 80; // "P";
-    packetBuffer[14] = 83; // "S";
-    packetBuffer[15] = 0;  // "0";
+    // Set refid 
+
+    if (gpsLocked) 
+    {    
+      packetBuffer[12] = 71; // "G";
+      packetBuffer[13] = 80; // "P";
+      packetBuffer[14] = 83; // "S";
+      packetBuffer[15] = 0;  // "0";
+    } 
+    else 
+    {
+      IPAddress myIP = WiFi.softAPIP();
+      packetBuffer[12] = myIP[0]; 
+      packetBuffer[13] = myIP[1];
+      packetBuffer[14] = myIP[2];
+      packetBuffer[15] = myIP[3]; 
+    }
 
     // Reference timestamp
 
