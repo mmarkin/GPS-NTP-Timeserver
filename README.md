@@ -117,9 +117,9 @@ I designed a printed circuit board for the project and had a few made. The Gerbe
 
 ![server2_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/Server%202.JPG)
 
-Here are a couple of photos of the interior of the enclosure.
+Here is a photo of the interior of the enclosure.
 
-![intFront_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/InteriorFront.JPG)
+![newBoard_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/New%20Board%20(5).JPG)
 
 The pushbutton enables or disables the WiFi. I did not use a PIR. The toggle switch turns the displays on and off.
 
@@ -128,8 +128,9 @@ The pushbutton enables or disables the WiFi. I did not use a PIR. The toggle swi
 ![inside_front_bb-menor](https://github.com/Montecri/GPSTimeServer/blob/Dual-Display/images/IMG_2767.JPG)
 
 ![inside_rear_bb-menor](https://github.com/Montecri/GPSTimeServer/blob/Dual-Display/images/IMG_2771.JPG)
+![intFront_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/InteriorFront.JPG)
 
-![newBoard_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/New%20Board%20(5).JPG)
+
 
 
 
