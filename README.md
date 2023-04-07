@@ -121,19 +121,12 @@ Here is a photo of the interior of the enclosure.
 
 ![newBoard_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/New%20Board%20(5).JPG)
 
+Here are a couple of photos of the project built on a protoboard before the printed circuit boards were made. 
 The pushbutton enables or disables the WiFi. I did not use a PIR. The toggle switch turns the displays on and off.
 
 ![intBack_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/InteriorBack.JPG)
 
 ![inside_front_bb-menor](https://github.com/Montecri/GPSTimeServer/blob/Dual-Display/images/IMG_2767.JPG)
-
-![inside_rear_bb-menor](https://github.com/Montecri/GPSTimeServer/blob/Dual-Display/images/IMG_2771.JPG)
-![intFront_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/InteriorFront.JPG)
-
-
-
-
-
 
 
 CAD drawing for the enclosure
