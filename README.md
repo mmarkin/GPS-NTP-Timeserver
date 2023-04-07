@@ -113,7 +113,9 @@ Breadboard layout
 
 ![sketch_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/sketch_bb.png)
 
+I designed a printed circuit board for the project and had a few made. The Gerber files are in the "resources" folder.
 
+![server2_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/Server%202.JPG)
 
 Here are a couple of photos of the interior of the enclosure.
 
@@ -129,7 +131,7 @@ The pushbutton enables or disables the WiFi. I did not use a PIR. The toggle swi
 
 ![newBoard_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/New%20Board%20(5).JPG)
 
-![server2_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/Server%202.JPG)
+
 
 
 
