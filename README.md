@@ -101,11 +101,11 @@ My time server does not have to be portable as Cristiano's is so it is AC powere
 
 Schematic diagram
 
-![sketch_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/Schematic2.png)
+![sketch_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/resources/Schematic2.png)
 
 Breadboard layout
 
-![sketch_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/sketch_bb.png)
+![sketch_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/resources/sketch2.png)
 
 I designed a printed circuit board for the project and had a few made. The Gerber files are in the "resources" folder.
 
