@@ -105,7 +105,7 @@ Schematic diagram
 
 Breadboard layout
 
-![sketch_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/resources/sketch2.png)
+![sketch_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/resources/sketch2_bb.png)
 
 I designed a printed circuit board for the project and had a few made. The Gerber files are in the "resources" folder.
 
