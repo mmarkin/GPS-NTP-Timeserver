@@ -60,7 +60,7 @@ Parts list:
 - Red, Green and Yellow LEDs
 - Resistors (150, 100 and 150 Ohms respectivelly for above leds)
 - Momentary push button switch
-- HC-SR501 PIR motion sensor module or SPDT switch (both are optional)
+- SPDT center off toggle switch
 
 ---
 <p align="center"><img src="https://user-images.githubusercontent.com/38574378/132773469-08fb7b59-2f9d-4641-9665-c8d50d3904bc.png">  
@@ -116,7 +116,8 @@ Here is a photo of the interior of the enclosure.
 ![newBoard_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/New%20Board%20(5).JPG)
 
 Here are a couple of photos of the project built on a protoboard before the printed circuit boards were made. 
-The pushbutton enables or disables the WiFi. I did not use a PIR. The toggle switch turns the displays on and off.
+The pushbutton enables or disables the WiFi. The toggle switch selects what is shown on the first OLED display and 
+also turns the displays on and off.
 
 ![intBack_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/InteriorBack.JPG)
 
