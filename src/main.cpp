@@ -4,12 +4,17 @@
    and
    https://forum.arduino.cc/u/ziggy2012/summary
 
-   Mitch Markin: 
-   02.Sep.2022:
-   Brett Oliver's PIR code addded to turn OLED display on and off   
+   Mitch Markin, 02.Sep.2022:
+   date bug from ziggy2012 code fixed,
+   unused variables commented out to clear compiler warnings, 
+   Brett Oliver's PIR code addded to turn OLED display on and off,
+     modified to use switch and voltage divider instead of PIR to select  
+     whether time or position is shown on first OLED display
+   got rid of string class in display functions,
+   ICACHE_RAM_ATTR changed to IRAM_ADDR to clear compiler warnings,
    added second OLED display for client IP information
    03.Apr.2023:
-   bug fixes for packet buffer settigs sugested by sjthespian   
+   bug fixes for NTP packet buffer settings suggested by Daniel Rich (sjthespian) 
 */
 
 #include "definitions.h"
@@ -19,7 +24,8 @@ void setup()
   Serial.begin(9600);
   delay(2000);
   Serial.println("\nGPS Time Server");
- 
+  Serial.println("Iniciado");  // Portugese for "Initiated" -MM
+
   pinMode(LOCK_LED, OUTPUT);
   pinMode(PPS_LED, OUTPUT);
   pinMode(WIFI_LED, OUTPUT);
@@ -284,7 +290,7 @@ void InitOLED()
 {
   u8g2_1.setI2CAddress(DISPLAY_1_ADDR);
   u8g2_1.begin();
-  u8g2_1.setContrast(255);      // you can play with this to try to equalize brightness of both displays
+  u8g2_1.setContrast(2);    // you can play with this to try to equalize brightness of both displays
                                 // but it doesn't have much effect -MM
            
   u8g2_2.setI2CAddress(DISPLAY_2_ADDR);
@@ -347,10 +353,7 @@ void ShowSatellites()
   u8g2_1.print(resol);
 }
 
-// We just care about the time here not the position. But it's GPS so the server  
-// knows where it's located and the function is here if you want to use it.
-
-void ShowPosition()     
+void ShowPosition()
 {  
   if (latitude < 0.0) 
   {
@@ -438,16 +441,42 @@ void UpdateDisplay()
 
     uint16_t PIRValue = analogRead(A0);
 
-    u8g2_1.clearBuffer();     
-    ShowSatellites();
-    ShowDate(t);
-    ShowTime(t);           
-    u8g2_1.sendBuffer();     
+    if (PIRValue < 340)         
+    {
+      u8g2_1.setPowerSave(1);   // turn displays off
+      u8g2_2.setPowerSave(1);     
+    } 
+    else if (PIRValue < 680)    
+    {
+      u8g2_1.setPowerSave(0);   // turn displays on, show position
+      u8g2_2.setPowerSave(0);
 
-    u8g2_2.clearBuffer();     
-    ShowClient();
-    u8g2_2.sendBuffer();
-     
+      u8g2_1.clearBuffer();    
+      ShowSatellites();
+      ShowPosition();                 
+      u8g2_1.sendBuffer();      
+
+      u8g2_2.clearBuffer();       
+      ShowClient();
+      u8g2_2.sendBuffer();    
+    }
+    else
+    {
+      u8g2_1.setPowerSave(0);   // turn displays on, show time and date
+      u8g2_2.setPowerSave(0);
+
+      u8g2_1.clearBuffer();    
+      ShowSatellites();
+      ShowDate(t);
+      ShowTime(t);           
+      u8g2_1.sendBuffer();     
+
+      u8g2_2.clearBuffer();     
+      ShowClient();
+      u8g2_2.sendBuffer();   
+    }
+
+    /*
     if (PIRValue < 500)         
     {
       u8g2_1.setPowerSave(1);   // turn displays off
@@ -457,8 +486,19 @@ void UpdateDisplay()
     {
       u8g2_1.setPowerSave(0);   // turn displays on
       u8g2_2.setPowerSave(0);
-    }   
-       
+      
+
+    u8g2_1.clearBuffer();     
+    ShowSatellites();
+    ShowDate(t);
+    ShowTime(t);           
+    u8g2_1.sendBuffer();     
+
+    u8g2_2.clearBuffer();     
+    ShowClient();
+    u8g2_2.sendBuffer();   
+    */
+   
     DEBUG_PRINTLN("Called PrintTime from UpdateDisplay");   
 
     #ifdef DEBUG
@@ -483,8 +523,9 @@ void SyncWithGPS()
   unsigned long age;
   gps.crack_datetime(&y, &mon, &d, &h, &m, &s, NULL, &age); // get time from GPS
   gps.f_get_position(&latitude, &longitude);
-         
-  if (age < 1000)                      // dont use data older than 1 second
+
+  //if (age < 1000 or age > 3000)        // dont use data older than 1 second
+  if (age < 1000)
   {
     setTime(h, m, s, d, mon, y);       // copy GPS time to system time
     DEBUG_PRINT("Time from GPS: ");
@@ -642,7 +683,6 @@ void ProcessNTP()
     const uint32_t seventyYears = 2208988800UL;    // to convert Unix time to NTP 
     time_t t = now();
     lastFix = t;    
-    
     timestamp = t + seventyYears;    
 
     #ifdef DEBUG
