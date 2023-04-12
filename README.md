@@ -107,7 +107,7 @@ used. If it is not desired to turn the displays off, just connect A0 permanently
 
 Schematic diagram
 
-![sketch_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/Schematic.png)
+![sketch_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/Schematic2.png)
 
 Breadboard layout
 
