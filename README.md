@@ -12,15 +12,11 @@ microcontrollers can handle up to eight WiFi clients.
 
 ![Displays_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/Display.JPG)
 
-As on Cristiano's original version, the first OLED display shows the number of GPS satellites that are"in view", the resolution 
-of the position fix, and the UTC time and date. The yellow LED shows that WiFi is enabled. The green LED shows that the GPS data is 
-valid and the server's internal clock is synchronized with it. The red LED flashes every second when GPS data is available.
-
-OLED displays can wear out if they are active all the time especially if they show information that does not change much.
-This version includes provision to turn the OLEDs off if nobody is there to see them. A PIR motion sensor module can be connected 
-to the ESP8266 as suggested by Brett Oliver who engineered the mod on the version of Cristiano's project that he built. The PIR
-automatically turns on the OLEDs when someone is near the server and turns them off when they leave. A switch could be 
-connected instead of the sensor if manual operation is desired. See below for more details.
+As on Cristiano's original version, the first OLED display shows the number of GPS satellites that are "in view", the resolution 
+of the position fix, and the UTC time and date. This version adds a switch so the first display can also show the latitude and
+longitude. This time server is GPS-based so it might as well be able to show where it is located. The switch can also turn the
+displays off since OLED displays can wear out if they are active all the time, especially if they show information that does not 
+change much. See the schematic diagram below for more details.
 
 The I2C address of the second OLED module has to be changed. This is done by relocating a resistor on the module's circuit
 board. There is a graphic on the board to show which resistor it is and where it goes for each of the two addresses. For example
@@ -32,6 +28,9 @@ You just need to use the constructor from the library and the I2C addresses that
 For example SH1106 modules could also be used. Constructors for SH1106 modules are included in the definitions.h file. 
 To use them comment out the SSD1306 constructors and uncomment the SH1106 constructors. 
 The I2C addresses specified in the code may also need to be changed to 0x3C and 0x3D. 
+
+Also as on Cristiano's original version, the yellow LED shows that WiFi is enabled. The green LED shows that the GPS data is 
+valid and the server's internal clock is synchronized with it. The red LED flashes every second when GPS data is available.
 
 To use the server, set the clock so it joins the WiFi network specified by the SSID and password in the definitions.h 
 file. Also set the clock so the address for the time server it calls is 192.168.4.1. That is the default IP address ESP 
@@ -99,11 +98,6 @@ Source code is also based on:<br>
 Wiring
 
 My time server does not have to be portable as Cristiano's is so it is AC powered only.
-
-If a PIR motion sensor is used to automatically turn the OLED displays on only when someone is near enough to see them, it is 
-connected to A0 on the NodeMCU. Alternatively, a simple SPDT switch that connects A0 to either ground or +3.3 volts could be
-used. If it is not desired to turn the displays off, just connect A0 permanently to +3.3 volts or comment out the 
-"if (PIRvalue < 500)" block of statements in the main.cpp file.
 
 Schematic diagram
 
