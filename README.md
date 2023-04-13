@@ -4,13 +4,18 @@ WiFi enabled GPS fed NTP server based on ESP8266 and Arduino framework
 This project adds to the work of Cristiano Monteiro. His version is portable.<br>
 https://github.com/Montecri/GPSTimeServer
 
-This version adds a second OLED display to help verify that the server responds to the NTP requests. Every time an NTP request comes 
-in from a client (i.e., a clock connected to the server's WiFi network) its IP address and the time the response was sent are shown 
-on the OLED. It also shows the total number of clients connected. The second display is optional, the code posted here runs without it. 
-However with multiple clocks it is a handy way to make sure they are all connected and being served. In server mode, ESP8266 
-microcontrollers can handle up to eight WiFi clients.
+I built a custom enclosure for my version using walnut and acrylic. I also added a second OLED display to show information
+about what is connected to the server. 
 
-![Displays_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/Display.JPG)
+![EnclosureFront_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/EnclosureFront.JPG)
+
+![Enclosure_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/Enclosure.JPG)
+
+The second OLED display helps to verify that the server responds to the NTP requests. Every time an NTP request comes 
+in from a client (i.e., a clock connected to the server's WiFi network) its IP address and the time the response was sent are shown 
+on the OLED. It also shows the total number of clients connected. 
+
+![Display2_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/Display2.JPG)
 
 As on Cristiano's original version, the first OLED display shows the number of GPS satellites that are "in view", the resolution 
 of the position fix, and the UTC time and date. This version adds a switch so the first display can also show the latitude and
@@ -18,7 +23,10 @@ longitude. This time server is GPS-based so it might as well be able to show whe
 displays off since OLED displays can wear out if they are active all the time, especially if they show information that does not 
 change much. See the schematic diagram below for more details.
 
-![Displays2_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/Display2.JPG)
+![Display1_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/Display1.JPG)
+
+The second display is optional, the code posted here runs without it. However with multiple clocks it is a handy way to 
+make sure they are all connected and being served. In server mode, ESP8266 microcontrollers can handle up to eight WiFi clients.
 
 The I2C address of the second OLED module has to be changed. This is done by relocating a resistor on the module's circuit
 board. There is a graphic on the board to show which resistor it is and where it goes for each of the two addresses. For example
@@ -43,12 +51,6 @@ downloaded and installed automatically. It is free like the Arduino IDE. However
 that make it easier to develop a project like this once you get the hang of using it. All the files needed for this project 
 have been provided. The code is in two files: definitions.h is in the "includes" directory and main.cpp is in the "src" 
 directory. The platformio.ini file is also provided. 
- 
-I built a custom enclosure for the project using walnut and acrylic. 
-
-![EnclosureFront_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/EnclosureFront.JPG)
-
-![Enclosure_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/Enclosure.JPG)
 
 Parts list:
 
