@@ -18,6 +18,8 @@ longitude. This time server is GPS-based so it might as well be able to show whe
 displays off since OLED displays can wear out if they are active all the time, especially if they show information that does not 
 change much. See the schematic diagram below for more details.
 
+![Displays2_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/Display2.JPG)
+
 The I2C address of the second OLED module has to be changed. This is done by relocating a resistor on the module's circuit
 board. There is a graphic on the board to show which resistor it is and where it goes for each of the two addresses. For example
 with the recommended SSD1306 modules the address is changed from 0x78 to 0x7A. The resistor is a tiny surface-mount part so 
