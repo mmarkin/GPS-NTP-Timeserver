@@ -111,18 +111,14 @@ I designed a printed circuit board for the project and had a few made. The Gerbe
 
 ![server2_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/Server%202.JPG)
 
-Here is a photo of the interior of the enclosure.
+Here are a couple of photos of the interior of the enclosure.
 
-![newBoard_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/New%20Board%20(5).JPG)
+![intFront_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/NewInteriorFront.JPG)
 
-Here are a couple of photos of the project built on a protoboard before the printed circuit boards were made. 
+![intBack_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/NewInteriorBack.JPG)
+
 The pushbutton enables or disables the WiFi. The toggle switch selects what is shown on the first OLED display and 
 also turns the displays on and off.
-
-![intBack_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/InteriorBack.JPG)
-
-![inside_front_bb-menor](https://github.com/Montecri/GPSTimeServer/blob/Dual-Display/images/IMG_2767.JPG)
-
 
 CAD drawing for the enclosure
 
