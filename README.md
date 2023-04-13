@@ -11,22 +11,24 @@ about what is connected to the server.
 
 ![Enclosure_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/Enclosure.JPG)
 
-The second OLED display helps to verify that the server responds to the NTP requests. Every time an NTP request comes 
-in from a client (i.e., a clock connected to the server's WiFi network) its IP address and the time the response was sent are shown 
-on the OLED. It also shows the total number of clients connected. 
-
-![Display2_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/Display2.jpg)
-
 As on Cristiano's original version, the first OLED display shows the number of GPS satellites that are "in view", the resolution 
-of the position fix, and the UTC time and date. This version adds a switch so the first display can also show the latitude and
-longitude. This time server is GPS-based so it might as well be able to show where it is located. The switch can also turn the
-displays off since OLED displays can wear out if they are active all the time, especially if they show information that does not 
-change much. See the schematic diagram below for more details.
+of the position fix, and the UTC time and date. The second OLED display helps to verify that the server responds to the NTP requests. 
+Every time an NTP request comes in from a client (i.e., a clock connected to the server's WiFi network) its IP address and the time 
+the response was sent are shown on the OLED. It also shows the total number of clients connected. In server mode, ESP8266 
+microcontrollers can handle up to eight WiFi clients.
 
 ![Display1_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/Display1.jpg)
 
+This version adds a switch so the first display can also show the latitude and longitude. This time server is GPS-based so it 
+might as well be able to show where it is located. 
+
+![Display2_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/Display2.jpg)
+
+The switch can also turn the displays off since OLED displays can wear out if they are active all the time, especially if they 
+show information that does not change much. See the schematic diagram below for more details.
+
 The second display is optional, the code posted here runs without it. However with multiple clocks it is a handy way to 
-make sure they are all connected and being served. In server mode, ESP8266 microcontrollers can handle up to eight WiFi clients.
+make sure they are all connected and being served. 
 
 The I2C address of the second OLED module has to be changed. This is done by relocating a resistor on the module's circuit
 board. There is a graphic on the board to show which resistor it is and where it goes for each of the two addresses. For example
