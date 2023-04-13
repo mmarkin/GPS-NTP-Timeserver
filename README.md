@@ -15,7 +15,7 @@ The second OLED display helps to verify that the server responds to the NTP requ
 in from a client (i.e., a clock connected to the server's WiFi network) its IP address and the time the response was sent are shown 
 on the OLED. It also shows the total number of clients connected. 
 
-![Display2_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/Display2.JPG)
+![Display2_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/Display2.jpg)
 
 As on Cristiano's original version, the first OLED display shows the number of GPS satellites that are "in view", the resolution 
 of the position fix, and the UTC time and date. This version adds a switch so the first display can also show the latitude and
