@@ -23,7 +23,7 @@ longitude. This time server is GPS-based so it might as well be able to show whe
 displays off since OLED displays can wear out if they are active all the time, especially if they show information that does not 
 change much. See the schematic diagram below for more details.
 
-![Display1_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/Display1.jpg}
+![Display1_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/Display1.jpg)
 
 The second display is optional, the code posted here runs without it. However with multiple clocks it is a handy way to 
 make sure they are all connected and being served. In server mode, ESP8266 microcontrollers can handle up to eight WiFi clients.
