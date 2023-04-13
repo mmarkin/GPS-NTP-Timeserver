@@ -126,7 +126,7 @@ also turns the displays on and off.
 
 CAD drawing for the enclosure
 
-![intFront_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/Enclosure.png)
+![CAD-_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/Enclosure.png)
 
 More information about Cristiano's original version of this timeserver can be found here:<br>
 https://www.linkedin.com/pulse/iot-maker-tale-stratum-1-time-server-built-from-scratch-monteiro/
