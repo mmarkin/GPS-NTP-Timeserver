@@ -20,7 +20,7 @@ microcontrollers can handle up to eight WiFi clients.
 ![Display1_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/Display1.jpg)
 
 This version adds a switch so the first display can also show the latitude and longitude. This time server is GPS-based so it 
-might as well be able to show where it is located. (Some digits have been fuzzed out in the photo.)
+might as well be able to show where it is located. (The exact location has been fuzzed out in the photo.)
 
 ![Display3_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/Display3.jpg)
 
