@@ -41,7 +41,7 @@ For example SH1106 modules could also be used. Constructors for SH1106 modules a
 To use them comment out the SSD1306 constructors and uncomment the SH1106 constructors. 
 The I2C addresses specified in the code may also need to be changed to 0x3C and 0x3D. 
 
-Also as on Cristiano's original version, the yellow LED shows that WiFi is enabled. The green LED shows that the GPS data is 
+As on Cristiano's original version, the yellow LED shows that WiFi is enabled. The green LED shows that the GPS data is 
 valid and the server's internal clock is synchronized with it. The red LED flashes every second when GPS data is available.
 
 To use the server, set the clock so it joins the WiFi network specified by the SSID and password in the definitions.h 
@@ -58,7 +58,7 @@ Parts list:
 
 - Amica NodeMCU (ESP8266 / ESP-12)                   
 - DS3231 RTC
-- Neo-6m V2 GPS
+- U-blox Neo-6m V2 GPS
 - 0.96" OLED Display (SSD1306 or similar. 
   If two are used be sure that it is possible to change the I2C address on one of them.) 
 - Hi-Link 5V/3W Power supply
@@ -100,10 +100,6 @@ Source code is also based on:<br>
 - http://www.brettoliver.org.uk/GPS_Time_Server/GPS_Time_Server.htm
 
 ---
-
-Wiring
-
-My time server does not have to be portable as Cristiano's is so it is AC powered only.
 
 Schematic diagram
 
