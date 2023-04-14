@@ -123,8 +123,8 @@ Here are a couple of photos of the interior of the enclosure.
 
 ![intBack_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/NewInteriorBack.JPG)
 
-The pushbutton enables or disables the WiFi. The toggle switch selects what is shown on the first OLED display and 
-also turns the displays on and off.
+The pushbutton enables or disables the WiFi. The toggle switch is SPDT with a center off position. It selects whether
+the time/date or the latitude/longitude is shown on the first OLED display. It also turns the displays on and off.
 
 CAD drawing for the enclosure
 
