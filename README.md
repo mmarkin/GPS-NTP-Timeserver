@@ -42,8 +42,9 @@ For example SH1106 modules could also be used. Constructors for SH1106 modules a
 To use them comment out the SSD1306 constructors and uncomment the SH1106 constructors. 
 The I2C addresses specified in the code may also need to be changed to 0x3C and 0x3D. 
 
-As on Cristiano's original version, the yellow LED shows that WiFi is enabled. The green LED shows that the GPS data is 
-valid and the server's internal clock is synchronized with it. The red LED flashes every second when GPS data is available.
+As on Cristiano's original version, the red LED flashes every second when GPS data is available.
+The yellow LED shows that WiFi is enabled. The green LED shows that the GPS data is valid and the server's 
+internal clock is synchronized with it. The
 
 ![IMG_3050_MOV_AdobeExpress](https://user-images.githubusercontent.com/32185145/219906084-103e5c18-b03a-4c53-9235-e16533b12cdc.gif)
 
