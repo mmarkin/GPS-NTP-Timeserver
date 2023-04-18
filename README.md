@@ -11,7 +11,7 @@ about what is connected to the server.
 
 ![Enclosure_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/Enclosure.JPG)
 
-As on Cristiano's original version, the first OLED display shows the number of GPS satellites that are "in view", the resolution 
+As on Cristiano's original version, the first OLED display shows the number of GPS satellites that are "in view," the resolution 
 of the position fix, and the UTC time and date. The second OLED display helps to verify that the server responds to the NTP requests. 
 Every time an NTP request comes in from a client (i.e., a clock connected to the server's WiFi network) its IP address and the time 
 the response was sent are shown on the OLED. It also shows the total number of clients connected. In server mode, ESP8266 
@@ -44,7 +44,7 @@ The I2C addresses specified in the code may also need to be changed to 0x3C and 
 
 As on Cristiano's original version, the red LED flashes every second when GPS data is available.
 The yellow LED shows that WiFi is enabled. The green LED shows that the GPS data is valid and the server's 
-internal clock is synchronized with it. The
+internal clock is synchronized with it.
 
 ![IMG_3050_MOV_AdobeExpress](https://user-images.githubusercontent.com/32185145/219906084-103e5c18-b03a-4c53-9235-e16533b12cdc.gif)
 
