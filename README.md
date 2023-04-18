@@ -115,7 +115,7 @@ Breadboard layout
 
 I designed a printed circuit board for the project and had a few made. The Gerber files are in the "resources" folder.
 NodeMCU modules come in various sizes. The board was designed for a module that has a .9 inch pitch between the two
-rows of pins such as the specidied Amica.  
+rows of pins such as the specified Amica module.  
 
 ![server2_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/Server%202.JPG)
 
