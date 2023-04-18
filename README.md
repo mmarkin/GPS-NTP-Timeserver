@@ -114,8 +114,7 @@ Breadboard layout
 ![sketch_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/resources/sketch2_bb.png)
 
 I designed a printed circuit board for the project and had a few made. The Gerber files are in the "resources" folder.
-If you use this board make sure the NodeMCU has .9 inch spacing between the two rows of pins as the 
-recommended Amica version does. Other versions have wider spacing and won't fit on the board. 
+The board was designed for an Amica NodeMCU which has a .9 inch pitch between the two rows of pins. 
 
 ![server2_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/Server%202.JPG)
 
