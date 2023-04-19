@@ -7,7 +7,7 @@ Create a directory called "GPSTimeServer"
 Copy the src/main.cpp file there and rename it "GPSTimeServer.ino"
 Also copy the includes/definitions.h file there. Don't change the name
 
-Use the IDE's library manager to search for and add the following libraries:
+Use the library manager to search for and add the following libraries:
 
 Time     Michael Margolis  v1.6.1
 RTC      Makuna   v2.3.5  (must be this version)
