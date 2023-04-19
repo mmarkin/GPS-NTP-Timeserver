@@ -11,4 +11,6 @@ TinyGPS  Mikal Hart
 U8g2     Oliver
 
 Make sure you have the ESP8266 extensions installed in the IDE
-Set the board to NodeMCU v
+Set the board to NodeMCU 1.0 (ESP-12E Module)
+Set the COM port
+Compile and upload (hopefully!)
