@@ -1,5 +1,5 @@
 If you must use the Arduino IDE, here's what to do. 
-This has been tested and it and it works but it's still better to use PlatformIO!
+This has been tested and it works but it's still better to use PlatformIO!
 
 Make sure you have the ESP8266 extensions installed in the IDE
 
