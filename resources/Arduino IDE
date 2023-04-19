@@ -1,9 +1,14 @@
-If you must use the Arduino IDE, here's what to do.
+If you must use the Arduino IDE, here's what to do. I have not tried this but it should work.
 
 Create a directory called "GPSTimeServer" 
 Copy the src/main.cpp file there and rename it "GPSTimeServer.ino
-Copy the includes/definitions.h file there. Its name does not have to be changed
+Copy the includes/definitions.h file there. Don't change the name
 Use the IDE's library manager to search for and add the following libraries
 
+Timelib  Michael Margolis 
+RTC      Makuna
+TinyGPS  Mikal Hart 
+U8g2     Oliver
 
 Make sure you have the ESP8266 extensions installed in the IDE
+Set the board to NodeMCU v
