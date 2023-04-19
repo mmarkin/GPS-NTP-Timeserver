@@ -1,0 +1,9 @@
+If you must use the Arduino IDE, here's what to do.
+
+Create a directory called "GPSTimeServer" 
+Copy the src/main.cpp file there and rename it "GPSTimeServer.ino
+Copy the includes/definitions.h file there. Its name does not have to be changed
+Use the IDE's library manager to search for and add the following libraries
+
+
+Make sure you have the ESP8266 extensions installed in the IDE
