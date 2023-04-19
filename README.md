@@ -57,7 +57,9 @@ downloaded and installed automatically. For those not familiar with PlatformIO, 
 Both are free to download and use without restriction like the Arduino IDE. However PlatformIO has more professional features 
 that make it easier to develop a project like this once you get the hang of using it.
 All the files needed for this project have been provided. The code is in two files: definitions.h is in the "includes" directory 
-and main.cpp is in the "src"directory. The platformio.ini file is also provided. 
+and main.cpp is in the "src" directory. The platformio.ini file is also provided.   
+
+The Arduino IDE can be used if desired. Instructions are in the "Using Arduino IDE" file in the "resources" directory.
 
 Parts list:
 
