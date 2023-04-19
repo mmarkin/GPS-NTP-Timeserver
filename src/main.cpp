@@ -188,7 +188,9 @@ void ProcessWifi()
 void PrintDigit(int d)
 {
   if (d < 10)
+  {   
     DEBUG_PRINT('0');
+  }   
   DEBUG_PRINT(d);
 }
 
@@ -228,7 +230,9 @@ void PrintRTCstatus()
     #endif
   }
   else
+  {   
     DEBUG_PRINTLN("ERROR: cannot read the RTC.");
+  }   
 }
 
 // Update RTC from current system time
@@ -248,7 +252,9 @@ void SetRTC(time_t t)
     #endif
   }
   else
+  {   
     DEBUG_PRINT("ERROR: cannot set RTC time");
+  }   
 }
 
 // Use this routine to manually set the RTC to a specific UTC time.
