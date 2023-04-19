@@ -53,8 +53,9 @@ file. Also set the clock so the address for the time server it calls is 192.168.
 devices use in server mode. The server will assign IP addresses to clients on its network starting with 192.168.4.2.
 
 It is highly recommended to use PlatformIO to compile and edit the code. That way all the libraries needed will be 
-downloaded and installed automatically. It runs as an extension for Microsoft's VS Code. Both are free like the Arduino IDE. 
-However PlatformIO has more professional features that make it easier to develop a project like this once you get the hang of using it.
+downloaded and installed automatically. For those not familiar with PlatformIO, it runs as an extension for Microsoft's VS Code. 
+Both are free to download and use without restriction like the Arduino IDE. However PlatformIO has more professional features 
+that make it easier to develop a project like this once you get the hang of using it.
 All the files needed for this project have been provided. The code is in two files: definitions.h is in the "includes" directory 
 and main.cpp is in the "src"directory. The platformio.ini file is also provided. 
 
