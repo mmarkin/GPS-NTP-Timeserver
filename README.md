@@ -34,7 +34,7 @@ make sure they are all connected and being served.
 The I2C address of the second OLED module has to be changed. This is done by relocating a resistor on the module's circuit
 board. There is a graphic on the board to show which resistor it is and where it goes for each of the two addresses. For example
 with the recommended SSD1306 modules the address is changed from 0x78 to 0x7A. The resistor is a tiny surface-mount part so 
-it requires a bit of delicate soldering to make the change.
+it requires a bit of delicate soldering to make the change. Also once it is free be careful not to loose it. Don't ask how I know!
 
 The U8g2 library that the code uses to drive the OLED displays works with many different displays. 
 You just need to use the constructor from the library and the I2C addresses that match the displays being used.
