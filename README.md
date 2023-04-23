@@ -59,7 +59,7 @@ that make it easier to develop a project like this once you get the hang of usin
 All the files needed for this project have been provided. The code is in two files: definitions.h is in the "includes" directory 
 and main.cpp is in the "src" directory. The platformio.ini file is also provided.   
 
-The Arduino IDE can be used if desired. Instructions are in the "Using Arduino IDE" file in the "resources" directory.
+Having said that, the Arduino IDE <i>can</i> be used if desired. Instructions are in the "Using Arduino IDE" file in the "resources" directory.
 
 Parts list:
 
@@ -117,7 +117,7 @@ Breadboard layout
 ![sketch_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/resources/sketch2_bb.png)
 
 I designed a printed circuit board for the project and had a few made. The Gerber files are in the "resources" folder.
-NodeMCU modules come in various sizes. The board was designed for a module that has a .9 inch pitch between the two
+NodeMCU modules come in various sizes. The board was designed for a module that has a 2.86mm (.9 inch) pitch between the two
 rows of pins such as the specified Amica module.  
 
 ![server2_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/Server%202.JPG)
