@@ -4,8 +4,8 @@ WiFi enabled GPS fed NTP server based on ESP8266 and Arduino framework
 This project adds to the work of Cristiano Monteiro. His version is portable.<br>
 https://github.com/Montecri/GPSTimeServer
 
-I built a custom enclosure for my version using walnut and acrylic. I also added a second OLED display to show information
-about what is connected to the server. 
+I added a second OLED display to show information about what is connected to the server. I also built a custom enclosure for my version 
+using walnut and acrylic. 
 
 ![EnclosureFront_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/EnclosureFront.JPG)
 
@@ -117,8 +117,8 @@ Breadboard layout
 ![sketch_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/resources/sketch2_bb.png)
 
 I designed a printed circuit board for the project and had a few made. The Gerber files are in the "resources" folder.
-NodeMCU modules come in various sizes. The board was designed for a module that has a 2.86mm (.9 inch) pitch between the two
-rows of pins such as the specified Amica module.  
+NodeMCU modules come in various sizes. The board was designed for a module that has a 22.86mm (.9 inch) pitch between 
+the two rows of pins such as the specified Amica module.  
 
 ![server2_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/Server%202.JPG)
 
