@@ -126,6 +126,8 @@ Here are a couple of photos of the interior of the enclosure.
 
 ![intFront_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/NewInteriorFront2.JPG)
 
+With the antenna shown and an acrylic top for the enclosure the GPS reception is good even indoors. 
+
 ![intBack_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/NewInteriorBack.JPG)
 
 The pushbutton enables or disables the WiFi. The toggle switch is SPDT with a center off position. It selects whether
