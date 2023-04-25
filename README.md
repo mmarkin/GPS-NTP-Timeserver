@@ -5,8 +5,8 @@ This project adds to the work of Cristiano Monteiro. His version is portable.<br
 https://github.com/Montecri/GPSTimeServer
 
 I added a second OLED display to show information about what is connected to the server. I also built a custom enclosure for my version 
-using walnut, ABS and tinted clear acrylic. I tried using a solid wood top for the enclosure but it reduced the GPS reception. The top's 
-ABS panel does not affect GPS or WiFi signals. 
+using walnut, ABS, and tinted clear acrylic. I tried using a solid wood top but it reduced the GPS reception. The top's ABS panel does 
+not affect GPS or WiFi signals. 
 
 ![EnclosureFront_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/EnclosureFront.JPG)
 
