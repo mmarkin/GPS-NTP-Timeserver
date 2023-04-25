@@ -5,8 +5,8 @@ This project adds to the work of Cristiano Monteiro. His version is portable.<br
 https://github.com/Montecri/GPSTimeServer
 
 I added a second OLED display to show information about what is connected to the server. I also built a custom enclosure for my version 
-using walnut and acrylic. I tried using a solid wood top for the enclosure but it reduced the GPS reception. The top's acrylic panel does
-not affect GPS or WiFi signals. 
+using walnut, ABS and tinted clear acrylic. I tried using a solid wood top for the enclosure but it reduced the GPS reception. The top's 
+ABS panel does not affect GPS or WiFi signals. 
 
 ![EnclosureFront_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/EnclosureFront.JPG)
 
@@ -15,7 +15,7 @@ not affect GPS or WiFi signals.
 As on Cristiano's original version, the first OLED display shows the number of GPS satellites that are "in view," the resolution 
 of the position fix, and the UTC time and date. The second OLED display helps to verify that the server responds to the NTP requests. 
 Every time an NTP request comes in from a client (i.e., a clock connected to the server's WiFi network) its IP address and the time 
-the response was sent are shown on the OLED. It also shows the total number of clients connected. In server mode, ESP8266 
+the response was sent are shown on the display. It also shows the total number of clients connected. In server mode, ESP8266 
 microcontrollers can handle up to eight WiFi clients.
 
 ![Display1_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/Display1.jpg)
