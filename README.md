@@ -15,7 +15,7 @@ not affect GPS or WiFi signals.
 As on Cristiano's original version, the first OLED display shows the number of GPS satellites that are "in view," the resolution 
 of the position fix, and the UTC time and date. The second OLED display helps to verify that the server responds to the NTP requests. 
 Every time an NTP request comes in from a client (i.e., a clock connected to the server's WiFi network) its IP address and the time 
-the response was sent are shown on the display. This informaatiion remains on the dipay untl he next requet arrives. It also shows 
+the response was sent are shown on the display. This informaatiion remains on the diplay untl he next requet arrives. It also shows 
 the total number of clients connected. In server mode, ESP8266 microcontrollers can handle up to eight WiFi clients.
 
 ![Display1_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/Display1.jpg)
