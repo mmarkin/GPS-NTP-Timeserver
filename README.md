@@ -1,4 +1,4 @@
-# GPS-NTP-Timeserver
+11111111111111111111# GPS-NTP-Timeserver
 WiFi enabled GPS fed NTP server based on ESP8266 and Arduino framework 
 
 This project adds to the work of Cristiano Monteiro. His version is portable.<br>
@@ -22,7 +22,7 @@ the total number of clients connected. In server mode, ESP8266 microcontrollers 
 
 This version adds a switch so the first display can also show the latitude and longitude. This time server is GPS-based so it 
 might as well be able to show where it is located (the exact location has been fuzzed out in the photo). If the location was 
-south of the Equator or east of the Prime Meridian the arrows would point the opposite way.
+in the southern or eastern hemispheres the arrows would point the opposite way.
 
 ![Display3_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/Display3.jpg)
 
