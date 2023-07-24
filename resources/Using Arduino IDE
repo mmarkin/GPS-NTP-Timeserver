@@ -4,8 +4,8 @@ This has been tested and it works but it's still better to use PlatformIO!
 Make sure you have the ESP8266 extensions installed in the IDE
 
 Create a directory called "GPSTimeServer" 
-Copy the src/main.cpp file there and rename it "GPSTimeServer.ino"
-Also copy the includes/definitions.h file there. Don't change the name
+Copy the main.cpp file from the src directory there and rename it "GPSTimeServer.ino"
+Also copy the definitions.h file from the includes directory there. Don't change the name
 Just copy the files, not the src and includes directories
 
 Use the library manager to search for and add the following libraries:
