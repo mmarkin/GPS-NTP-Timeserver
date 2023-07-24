@@ -35,7 +35,7 @@ make sure they are all connected and being served.
 The I2C address of the second OLED module has to be changed. This is done by relocating a resistor on the module's circuit
 board. There is a graphic on the board to show which resistor it is and where it goes for each of the two addresses. For example
 with the recommended SSD1306 modules the address is changed from 0x78 to 0x7A. The resistor is a tiny surface-mount part so 
-it requires a bit of delicate soldering to make the change. Also once it is free be careful not to loose it. Don't ask how I know!
+it requires a bit of delicate soldering to make the change. Also once it is free be careful not to lose it. Don't ask how I know!
 
 The U8g2 library that the code uses to drive the OLED displays works with many different displays. 
 You just need to use the constructor from the library and the I2C addresses that match the displays being used.
@@ -72,7 +72,7 @@ Parts list:
 - Hi-Link 5V/3W Power supply
 - Mini-360 DC-DC Buck converter
 - Red, Green and Yellow LEDs
-- Resistors (150, 100 and 150 Ohms respectivelly for above leds)
+- Resistors (150, 100 and 150 Ohms respectively for above LEDs)
 - Momentary push button switch
 - SPDT center off toggle switch
 
@@ -89,7 +89,7 @@ that battery.
 There are workarounds for that so you do not need to toss your module away, the most popular being removing a diode and/or 
 resistor.
 
-There is a long discussion on the thread below about root cause and possible fixes:
+There is a long discussion on the thread below about the root cause and possible fixes:
 
 https://forum.arduino.cc/t/zs-042-ds3231-rtc-module/268862/33
 
@@ -132,7 +132,7 @@ wood frame building.
 
 ![intBack_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/NewInteriorBack.JPG)
 
-The pushbutton enables or disables the WiFi. The toggle switch is SPDT with a center off position. It selects whether
+The pushbutton enables or disables the WiFi. The toggle switch is SPDT with a center-off position. It selects whether
 the time/date or the latitude/longitude is shown on the first OLED display. It also turns the displays on and off.
 
 CAD drawing for the enclosure
