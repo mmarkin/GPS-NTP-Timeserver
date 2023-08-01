@@ -132,8 +132,11 @@ wood frame building.
 
 ![intBack_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/NewInteriorBack.JPG)
 
-The pushbutton enables or disables the WiFi. The toggle switch is SPDT with a center-off position. It selects whether
-the time/date or the latitude/longitude is shown on the first OLED display. It also turns the displays on and off.
+The push button enables or disables the WiFi. It's not really needed here and it could be omitted along with the yellow LED. 
+They are carry-overs from Cristiano's version which can be battery powered, so they are there to conserve power when WiFi isn't needed.
+WiFi is enabled by default and this version is AC-powered.
+The toggle switch is SPDT with a center-off position. It selects whether the time/date or the latitude/longitude is shown on the 
+first OLED display. It also turns the displays on and off.
 
 CAD drawing for the enclosure
 
