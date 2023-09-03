@@ -29,17 +29,17 @@ in the southern or eastern hemispheres the arrows would point the opposite way.
 The switch can also turn the displays off since OLED displays can wear out if they are active all the time, especially if they 
 show information that does not change much. See the schematic diagram below for more details.
 
-The second display is optional, the code posted here runs without it. However with multiple clocks it is a handy way to 
+The second display is optional, the code posted here runs without it. However with multiple clocks it's a handy way to 
 make sure they are all connected and being served. 
 
 The I2C address of the second OLED module has to be changed. This is done by relocating a resistor on the module's circuit
-board. There is a graphic on the board to show which resistor it is and where it goes for each of the two addresses. For example
+board. There is a graphic on the board to show which resistor it is and where it goes for each of the two addresses. For example,
 with the recommended SSD1306 modules the address is changed from 0x78 to 0x7A. The resistor is a tiny surface-mount part so 
-it requires a bit of delicate soldering to make the change. Also once it is free be careful not to lose it. Don't ask how I know!
+it requires a bit of delicate soldering to make the change. Also once it's free be careful not to lose it. Don't ask how I know!
 
 The U8g2 library that the code uses to drive the OLED displays works with many different displays. 
 You just need to use the constructor from the library and the I2C addresses that match the displays being used.
-For example SH1106 modules could also be used. Constructors for SH1106 modules are included in the definitions.h file. 
+For example, SH1106 modules could also be used. Constructors for SH1106 modules are included in the definitions.h file. 
 To use them comment out the SSD1306 constructors and uncomment the SH1106 constructors. 
 The I2C addresses specified in the code may also need to be changed to 0x3C and 0x3D. 
 
@@ -55,7 +55,7 @@ devices use in server mode. The server will assign IP addresses to clients on it
 
 It is highly recommended to use PlatformIO to compile and edit the code. That way all the libraries needed will be 
 downloaded and installed automatically. For those not familiar with PlatformIO, it runs as an extension for Microsoft's VS Code. 
-Both are free to download and use without restriction like the Arduino IDE. However PlatformIO has more professional features 
+Both are free to download and use without restriction like the Arduino IDE. However, PlatformIO has more professional features 
 that make it easier to develop a project like this once you get the hang of using it.
 All the files needed for this project have been provided. The code is in two files: definitions.h is in the "includes" directory 
 and main.cpp is in the "src" directory. The platformio.ini file is also provided.   
@@ -133,7 +133,7 @@ wood frame building.
 ![intBack_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/NewInteriorBack.JPG)
 
 The push button enables or disables the WiFi. It's not really needed here and it could be omitted along with the yellow LED. 
-They are carry-overs from Cristiano's version which can be battery powered, so they are there to conserve power when WiFi isn't needed.
+They are carry-overs from Cristiano's version which can be battery-powered, so they are there to conserve power when WiFi isn't needed.
 WiFi is enabled by default and this version is AC-powered.
 The toggle switch is SPDT with a center-off position. It selects whether the time/date or the latitude/longitude is shown on the 
 first OLED display. It also turns the displays on and off.
