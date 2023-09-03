@@ -78,7 +78,7 @@ Parts list:
 
 ---
 <p align="center"><img src="https://user-images.githubusercontent.com/38574378/132773469-08fb7b59-2f9d-4641-9665-c8d50d3904bc.png">  
-<b>ATTENTION</b><img src="https://user-images.githubusercontent.com/38574378/132773469-08fb7b59-2f9d-4641-9665-c8d50d3904bc.png"></p> 
+<b>ATTENTION</b> <img src="https://user-images.githubusercontent.com/38574378/132773469-08fb7b59-2f9d-4641-9665-c8d50d3904bc.png"></p> 
 
 Several DS3231 modules being sold today contain a hazardous design flaw in which it supplies a voltage to the battery cradle 
 regardless if it came with a rechargeable battery or not. 
