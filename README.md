@@ -5,8 +5,8 @@ This project adds to the work of Cristiano Monteiro. His version is portable.<br
 https://github.com/Montecri/GPSTimeServer
 
 I added a second OLED display to show information about what is connected to the server. I also built a custom enclosure for my version 
-using walnut, ABS, and tinted transparent acrylic. I tried using a solid wood top but it reduced the GPS reception. The top's ABS panel does 
-not affect GPS or WiFi signals. 
+using walnut, ABS, and tinted transparent acrylic. I tried using a solid wood top but it reduced the GPS reception. The top's ABS panel doesn't 
+affect the GPS or WiFi signals. 
 
 ![EnclosureFront_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/EnclosureFront.JPG)
 
@@ -27,7 +27,7 @@ in the southern or eastern hemispheres the arrows would point the opposite way.
 ![Display3_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/Display3.jpg)
 
 The switch can also turn the displays off since OLED displays can wear out if they are active all the time, especially if they 
-show information that does not change much. See the schematic diagram below for more details.
+show information that doesn't change much. See the schematic diagram below for more details.
 
 The second display is optional, the code posted here runs without it. However with multiple clocks it's a handy way to 
 make sure they are all connected and being served. 
@@ -83,10 +83,10 @@ Parts list:
 Several DS3231 modules being sold today contain a hazardous design flaw in which it supplies a voltage to the battery cradle 
 regardless if it came with a rechargeable battery or not. 
 If it came with a CR2032 battery (non-rechargeable) the consequence is that it will swell, explode, or worse. 
-If it came with a LIR2032 battery (rechargeable), the module being fed with 5v will generate an unsafe charging voltage for 
+If it came with an LIR2032 battery (rechargeable) and the module is fed with 5v, that will generate an unsafe charging voltage for 
 that battery.
 
-There are workarounds for that so you do not need to toss your module away, the most popular being removing a diode and/or 
+There are workarounds for this so you do not need to toss your module away, the most popular being the removal of a diode and/or 
 resistor.
 
 There is a long discussion on the thread below about the root cause and possible fixes:
@@ -134,8 +134,8 @@ wood frame building.
 
 The push button enables or disables the WiFi. It's not really needed here and it could be omitted along with the yellow LED. 
 They are carry-overs from Cristiano's version which can be battery-powered, so they are there to conserve power when WiFi isn't needed.
-WiFi is enabled by default and this version is AC-powered.
-The toggle switch is SPDT with a center-off position. It selects whether the time/date or the latitude/longitude is shown on the 
+This version is AC-powered and WiFi is enabled by default.
+The toggle switch is SPDT with a center-off position. It selects whether time/date or latitude/longitude is shown on the 
 first OLED display. It also turns the displays on and off.
 
 CAD drawing for the enclosure
