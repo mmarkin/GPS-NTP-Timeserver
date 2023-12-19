@@ -29,7 +29,7 @@ in the southern or eastern hemispheres the arrows would point the opposite way.
 The switch can also turn the displays off since OLED displays can wear out if they are active all the time, especially if they 
 show information that doesn't change much. See the schematic diagram below for more details.
 
-The second display is optional, the code posted here runs without it. However with multiple clocks it's a handy way to 
+The second display is optional, the code posted here runs without it. However, with multiple clocks it's a handy way to 
 make sure they are all connected and being served. 
 
 The I2C address of the second OLED module has to be changed. This is done by relocating a resistor on the module's circuit
@@ -50,7 +50,7 @@ internal clock is synchronized with it.
 ![IMG_3050_MOV_AdobeExpress](https://user-images.githubusercontent.com/32185145/219906084-103e5c18-b03a-4c53-9235-e16533b12cdc.gif)
 
 To use the server, set the clock so it joins the WiFi network specified by the SSID and password in the definitions.h 
-file. Also set the clock so the address for the time server it calls is 192.168.4.1. That is the default IP address ESP 
+file. Also set the clock so the address for the time server it calls is 192.168.4.1 which is the default IP address ESP 
 devices use in server mode. The server will assign IP addresses to clients on its network starting with 192.168.4.2.
 
 It is highly recommended to use PlatformIO to compile and edit the code. That way all the libraries needed will be 
