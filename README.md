@@ -37,10 +37,10 @@ board. There is a graphic on the board to show which resistor it is and where it
 with the recommended SSD1306 modules the address is changed from 0x78 to 0x7A. The resistor is a tiny surface-mount part so 
 it requires a bit of delicate soldering to make the change. Also once it's free be careful not to lose it. Don't ask how I know!
 
-The U8g2 library that the code uses to drive the OLED displays works with many different displays. 
+The U8g2 library the code uses to drive the OLED displays works with many different displays. 
 You just need to use the constructor from the library and the I2C addresses that match the displays being used.
-For example, SH1106 modules could also be used. Constructors for SH1106 modules are included in the definitions.h file. 
-To use them comment out the SSD1306 constructors and uncomment the SH1106 constructors. 
+For example, SH1106 modules could also be used. Object definitions for SH1106 modules are included in the definitions.h file. 
+To use them comment out the SSD1306 definitions and uncomment the SH1106 definitions. 
 The I2C addresses specified in the code may also need to be changed to 0x3C and 0x3D. 
 
 As on Cristiano's original version, the red LED flashes every second when GPS data is available.
