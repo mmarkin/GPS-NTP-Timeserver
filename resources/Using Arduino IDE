@@ -12,7 +12,7 @@ Don't change the name
 Use the library manager to search for and add the following libraries:
 
 Time     Michael Margolis  v1.6.1
-RTC      Makuna   v2.3.5  (must be this version)
+RTC      Makuna   v2.4.3
 TinyGPS  Mikal Hart  v13.0.0
 U8g2     Oliver  v2.33.15
 
