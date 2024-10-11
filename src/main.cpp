@@ -5,20 +5,20 @@
    https://forum.arduino.cc/u/ziggy2012/summary
 
    Mitch Markin, 02.Sep.2022 v1.1:
-   date bug from ziggy2012 code fixed,
-   unused variables commented out to clear compiler warnings, 
-   Brett Oliver's PIR code addded to turn OLED displays on and off,
+     date bug from ziggy2012 code fixed,
+     unused variables commented out to clear compiler warnings, 
+     Brett Oliver's PIR code addded to turn OLED displays on and off,
      modified to use switch and voltage divider instead of PIR to select  
      whether time or position is shown on first OLED display
-   got rid of string class in display functions,
-   ICACHE_RAM_ATTR changed to IRAM_ADDR to clear compiler warnings,
-   added second OLED display for client IP information
+     got rid of string class in display functions,
+     ICACHE_RAM_ATTR changed to IRAM_ADDR to clear compiler warnings,
+     added second OLED display for client IP information
    03.Apr.2023:
-   bug fixes for NTP packet buffer settings suggested by Daniel Rich (sjthespian) 
+     bug fixes for NTP packet buffer settings suggested by Daniel Rich (sjthespian) 
    31.Aug.2024:
-   changes to client display, fixed definitions.h so newer versions of RTC library work
+     changes to client display, fixed definitions.h so newer versions of RTC library work
    10.October.2024 v1.2:
-  changes so OLEDs are activated by PIR again and a long press on the pushbutton selects 
+    changes so OLEDs are activated by PIR again and a long press on the pushbutton selects 
     whether first OLED display shows time/satellites or GPS information
 */
 
@@ -75,7 +75,6 @@ void setup()
 
   SyncWithRTC();                              // start clock with RTC data
   attachInterrupt(PPS_PIN, Isr, RISING);      // enable GPS 1pps interrupt input
-  //attachInterrupt(WIFI_BUTTON, Btw, FALLING);
   
   ProcessWifi();
 
@@ -477,11 +476,11 @@ void UpdateDisplay()
 }
 
 // --------------------------------------------------------------------------------------------------
-// TIME SYNCHONIZATION ROUTINES
-// These routines will synchonize time with GPS and/or RTC as necessary.
+// TIME SYNCHRONIZATION ROUTINES
+// These routines will synchronize time with GPS and/or RTC as necessary.
 // Sync with GPS occurs when the 1pps interrupt signal from the GPS goes high.
-// GPS synchonization events are attempted every (SYNC_INTERVAL) seconds.
-// If a valid GPS signal is not received within (SYNC_TIMEOUT) seconds, the clock is synchonized
+// GPS synchronization events are attempted every (SYNC_INTERVAL) seconds.
+// If a valid GPS signal is not received within (SYNC_TIMEOUT) seconds, the clock is synchronized
 // with RTC instead.  The RTC time is updated with GPS data once every 24 hours.
 
 void SyncWithGPS()
@@ -493,7 +492,7 @@ void SyncWithGPS()
   gps.crack_datetime(&y, &mon, &d, &h, &m, &s, NULL, &age); // get time from GPS
   gps.f_get_position(&latitude, &longitude);
 
-  //if (age < 1000 or age > 3000)        // dont use data older than 1 second
+  //if (age < 1000 or age > 3000)        // don't use data older than 1 second
   if (age < 1000)
   {
     setTime(h, m, s, d, mon, y);       // copy GPS time to system time
@@ -505,7 +504,7 @@ void SyncWithGPS()
     DEBUG_PRINTLN(s);
     adjustTime(1);                     // 1pps signal = start of next second
     syncTime = now();                  // remember time of this sync
-    gpsLocked = true;                  // set flag that time is reflects GPS time
+    gpsLocked = true;                  // set flag that time is reflected GPS time
     UpdateRTC();                       // update internal RTC clock periodically
     DEBUG_PRINTLN("GPS synchronized"); // send message to serial monitor   
   }
@@ -528,9 +527,9 @@ void SyncWithRTC()
 }
 
 void SyncCheck()
-// Manage synchonization of clock to GPS module
-// First, check to see if it is time to synchonize
-// Do time synchonization on the 1pps signal
+// Manage synchronization of clock to GPS module
+// First, check to see if it is time to synchronize
+// Do time synchronization on the 1pps signal
 // This call must be made frequently (keep in main loop)
 {
   unsigned long timeSinceSync = now() - syncTime;    // how long has it been since last sync?
