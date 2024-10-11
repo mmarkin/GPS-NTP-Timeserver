@@ -27,7 +27,7 @@ in the southern or eastern hemispheres the arrows would point the opposite way.
 ![Display3_bb-menor](https://github.com/mmarkin/GPS-NTP-Timeserver/blob/main/IMAGES/Display3.jpg)
 
 The switch can also turn the displays off since OLED displays can wear out if they are active all the time, especially if they 
-show information that doesn't change much. See the schematic diagram below for more details.
+show information that doesn't change much. See the schematic diagram below for more details.    
 
 The second display is optional, the code posted here runs without it. However, with multiple clocks it's a handy way to 
 make sure they are all connected and being served. 
@@ -138,6 +138,10 @@ They are carry-overs from Cristiano's version which can be battery-powered, so t
 This version is AC-powered and WiFi is enabled by default.
 The toggle switch is SPDT with a center-off position. It selects whether time/date or latitude/longitude is shown on the 
 first OLED display. It also turns the displays on and off.
+
+There is also a branch on this repository called PIR Version. It shows a version of this project where a PIR module is
+used to turn the displays on only if it detects someone is nearby. The pushbutton in that version enables or disables WiFi as usual, 
+but a long press switches the first display between time/satellite information and the latitude/longitude received from GPS. 
 
 CAD drawing for the enclosure
 
