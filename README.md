@@ -2,7 +2,7 @@ This version is the same as the one in the Main branch, except it uses a PIR mod
 control the OLED displays. 
 
 A short press on the pushbutton still enables or disables WiFi.   
-A long press (> 800 ms)  on the button switches the first display between showing the stime/date/satellite information
+A long press (> 800 ms)  on the button switches the first display between showing the time/date/satellite information
 and the latitude/longitude received from GPS.
 
 Both displays are enabled when the PIR detects motion.   
