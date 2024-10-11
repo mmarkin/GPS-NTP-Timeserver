@@ -18,8 +18,8 @@
    31.Aug.2024:
      changes to client display, fixed definitions.h so newer versions of RTC library work
    10.October.2024 v1.2:
-    changes so OLEDs are activated by PIR again and a long press on the pushbutton selects 
-    whether first OLED display shows time/satellites or GPS information
+    changes so OLEDs are activated by PIR or switch and a long press on the pushbutton selects 
+    whether first OLED display shows time/satellites or GPS position information
 */
 
 #include "definitions.h"
