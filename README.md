@@ -137,7 +137,7 @@ The push button enables or disables the WiFi. It's not really needed here and it
 They are carry-overs from Cristiano's version which can be battery-powered, so they are there to conserve power when WiFi isn't needed.
 This version is AC-powered and WiFi is enabled by default.
 The toggle switch is SPDT with a center-off position. It selects whether time/date/satellite information or the latitude/longitude  
-is shown on thefirst OLED display. It also turns the displays on and off.
+received from GPS is shown on the first OLED display. It also turns the displays on and off.
 
 There is also a branch on this repository called PIR Version. It shows a version of this project where a PIR module is
 used to turn the displays on only if it detects someone is nearby. The pushbutton in that version enables or disables WiFi as usual, 
