@@ -1,5 +1,5 @@
 This version is the same as the one in the Main branch, except instead of a toggle switch it uses a PIR 
-(passive infrared) module to enable both OLED displays only when it detetcts someone is nearby. 
+(passive infrared) module to enable both OLED displays only when it detects someone is nearby. 
 
 A short press on the pushbutton still enables or disables WiFi.   
 A long press (> 800 ms)  on the button switches the first display between showing the time/date/satellite information
