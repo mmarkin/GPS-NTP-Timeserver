@@ -9,5 +9,5 @@ A toggle switch can still be used if desired instead of a PIR module to turn the
 It just has to connect the ESP's A0 pin to 3.3 volts to turn the displays on.   
 
 If compiling this code with the Arduino IDE follow the directions in the Using Arduino IDE file in the Resources directory
-of the Main branch. But also add the OneButton v2.6.1 library by Matt Hertel as well as the ones mentioned. PlatformIO does this 
+of the Main branch. But also add the OneButton v2.6.1 library by Matthias Hertel as well as the ones mentioned. PlatformIO does this 
 automatically, of course. 
