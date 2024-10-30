@@ -139,8 +139,9 @@ This version is AC-powered and WiFi is enabled by default.
 The toggle switch is SPDT with a center-off position. It selects whether time/date/satellite information or the latitude/longitude
 received from GPS is shown on the first OLED display. It also turns the displays on and off.
 
-There is also a branch on this repository called PIR Version. It shows a version of this project where a PIR module is
-used to turn the displays on only if it detects someone is nearby. The pushbutton in that version enables or disables WiFi as usual, 
+There is also a branch on this repository called PIR Version. It shows a version of this project where a PIR
+(passive infrared) module is used to enable both OLED displays only when it detects someone is nearby. 
+The pushbutton in that version enables or disables WiFi as usual, 
 but a long press switches the first display between time/date/satellite information and the latitude/longitude received from GPS. 
 
 CAD drawing for the enclosure
